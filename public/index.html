@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лента — комьюнити, посты и обсуждения</title>
+  <meta property="og:title" content="Лента — комьюнити, посты и обсуждения">
+  <meta property="og:description" content="Форум с комьюнити, постами трёх типов и древовидными комментариями: разработка, котики, кулинария, автомобили.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23d64b2a'/%3E%3Cpath d='M8 12h16M8 16.5h16M8 21h9' stroke='%23fff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/css/style.css?v=1">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" data-link class="brand">
+        <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#d64b2a"/><path d="M8 12h16M8 16.5h16M8 21h9" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <span>Лента</span>
+      </a>
+      <form id="search-form" class="search" role="search">
+        <svg class="ico" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m10 10 3.6 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <input id="search-input" type="search" placeholder="Поиск по заголовкам" autocomplete="off">
+      </form>
+      <nav class="sorts" id="sorts" aria-label="Сортировка">
+        <button type="button" data-sort="hot">Горячее</button>
+        <button type="button" data-sort="top">Лучшее</button>
+        <button type="button" data-sort="new">Новое</button>
+      </nav>
+      <div class="auth-area" id="auth-area"></div>
+    </div>
+  </header>
+  <div class="layout">
+    <main id="view" class="view"><div class="card muted">Загрузка…</div></main>
+    <aside id="sidebar" class="sidebar"></aside>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast" role="status"></div>
+  <script type="module" src="/js/main.js?v=1"></script>
+</body>
+</html>
